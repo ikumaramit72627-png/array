@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sum of all element in an array</title>
+    <title>Summation of Array Elements</title>
 </head>
 <body>
+
+    <h2>Array Sum Calculation</h2>
+
+    <p id="showArray"></p>
+    <p id="showSum"></p>
+
     <script>
-        let arr= prompt("Enter Comma Separated Integers")
-        let num= b.split(",").map(Number)
-        let sum=0
-        for (let i = 0;i<num.length;i++){
-            sum+=num[i]
+        var myNumbers = [10, 20, 30, 40, 50];
+        var sum = 0;
+
+        for (var i = 0; i < myNumbers.length; i++) {
+            sum = sum + myNumbers[i];
         }
-        alert(`Sum of Integers inside array: ${sum}`)
 
+        document.getElementById("showArray").innerHTML = "The numbers in the array are: " + myNumbers;
+        document.getElementById("showSum").innerHTML = "The total sum is: " + sum;
     </script>
-</body>
 
+</body>
 </html>
